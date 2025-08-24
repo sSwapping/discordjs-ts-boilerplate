@@ -1,7 +1,6 @@
 import { REST, Routes } from "discord.js";
 import { commands } from "./commands";
 import { config } from "./config";
-import { DeployCommandsProps } from "./types/commands";
 
 const commandsData = Object.values(commands).map((command) => command.data);
 
