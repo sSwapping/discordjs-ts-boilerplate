@@ -8,11 +8,8 @@ const client = new Client({
 });
 
 client.on("ready", async () => {
+  await deployCommands();
   console.log("Bot is ready!");
-});
-
-client.on("guildCreate", async (guild) => {
-  await deployCommands({ guildId: guild.id });
 });
 
 client.on("interactionCreate", async (interaction) => {
